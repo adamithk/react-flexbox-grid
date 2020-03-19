@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import createProps from '../createProps';
 import { ViewportSizeType } from '../types';
 
-const rowKeys = ['start', 'center', 'end', 'top', 'middle', 'bottom', 'around', 'between'];
+const rowKeys = ['itpost-start', 'itpost-center', 'itpost-end', 'itpost-top', 'itpost-middle', 'itpost-bottom', 'itpost-around', 'itpost-between'];
 
 const propTypes = {
   reverse: PropTypes.bool,
@@ -22,7 +22,7 @@ const propTypes = {
 };
 
 function getRowClassNames(props) {
-  const modificators = [props.className, getClass('row')];
+  const modificators = [props.className, getClass('itpost-row')];
 
   for (let i = 0; i < rowKeys.length; ++i) {
     const key = rowKeys[i];
@@ -33,7 +33,7 @@ function getRowClassNames(props) {
   }
 
   if (props.reverse) {
-    modificators.push(getClass('reverse'));
+    modificators.push(getClass('itpost-reverse'));
   }
 
   return modificators;

@@ -23,16 +23,16 @@ const propTypes = {
 };
 
 const classMap = {
-  xs: 'col-xs',
-  sm: 'col-sm',
-  md: 'col-md',
-  lg: 'col-lg',
-  xl: 'col-xl',
-  xsOffset: 'col-xs-offset',
-  smOffset: 'col-sm-offset',
-  mdOffset: 'col-md-offset',
-  lgOffset: 'col-lg-offset',
-  xlOffset: 'col-xl-offset'
+  xs: 'itpost-col-xs',
+  sm: 'itpost-col-sm',
+  md: 'itpost-col-md',
+  lg: 'itpost-col-lg',
+  xl: 'itpost-col-xl',
+  xsOffset: 'itpost-col-xs-offset',
+  smOffset: 'itpost-col-sm-offset',
+  mdOffset: 'itpost-col-md-offset',
+  lgOffset: 'itpost-col-lg-offset',
+  xlOffset: 'itpost-col-xl-offset'
 };
 
 function isInteger(value) {
@@ -47,11 +47,11 @@ function getColClassNames(props) {
   }
 
   if (props.first) {
-    extraClasses.push(getClass('first-' + props.first));
+    extraClasses.push(getClass('itpost-first-' + props.first));
   }
 
   if (props.last) {
-    extraClasses.push(getClass('last-' + props.last));
+    extraClasses.push(getClass('itpost-last-' + props.last));
   }
 
   return Object.keys(props)
