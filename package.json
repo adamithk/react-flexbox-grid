@@ -72,7 +72,6 @@
     "compile": "npm run compile:lib && npm run compile:dist",
     "compile:dist": "rm -rf dist && cross-env ./node_modules/.bin/webpack",
     "compile:lib": "rm -rf lib && ./node_modules/.bin/babel -d ./lib ./src",
-    "postinstall": "npm run build",
     "lint": "eslint src test",
     "patch": "bumped release patch",
     "prebuild": "npm run clean",
